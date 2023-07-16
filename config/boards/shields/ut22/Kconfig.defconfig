@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT
+
+if SHIELD_CB34S
+
+config ZMK_KEYBOARD_NAME
+    default "cb34s"
+
+endif

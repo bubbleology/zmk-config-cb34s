@@ -1,0 +1,2 @@
+config SHIELD_CB34S
+    def_bool $(shields_list_contains,cb34s)
