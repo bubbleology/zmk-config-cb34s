@@ -1,15 +1,15 @@
 manifest:
   remotes:
+      # zmk official
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: urob
-      url-base: https://github.com/urob
-    - name: AakashDabas
-      url-base: https://github.com/AakashDabas
+      # bravekarma
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
   projects:
     - name: zmk
-      remote: AakashDabas
-      revision: animated_widgets
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
