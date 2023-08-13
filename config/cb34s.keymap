@@ -87,7 +87,7 @@
             timeout-ms = <40>;
             key-positions = <21 22>;
             bindings = <&to COMFY_L>;
-            layers = <0 1 2 3 4>
+            layers = <0 1 2 3 4>;
         };
 
         combo_default {
