@@ -18,14 +18,14 @@
             , <&pro_micro 5 GPIO_ACTIVE_HIGH> // COL4
         ;
         row-gpios
-            = <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW0
-            , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW1
-            , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW2
-            , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW3
-            , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW4
-            , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW5
-            , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW6
-            , <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW7
+            = <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)> // ROW0
+            , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)> // ROW1
+            , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)> // ROW2
+            , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)> // ROW3
+            , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)> // ROW4
+            , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)> // ROW5
+            , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)> // ROW6
+            , <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)> // ROW7
         ;
             
     };
