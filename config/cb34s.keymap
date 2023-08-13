@@ -13,7 +13,7 @@
 #define NAV_L 		2
 #define BLE_L 		3
 #define COMFY_L		4
-#define WORK_L		5
+#define NUMBERS_L	5
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 
@@ -46,6 +46,7 @@
 	TO_4	= 21 | 22
 	TO_0	= 22 | 23 
 	TO_3	= 20 | 21 | 22		TO_3	= 27 | 28 | 29
+    TO_5    = 11 | 21
 */
 
 / {
@@ -86,6 +87,7 @@
             timeout-ms = <40>;
             key-positions = <21 22>;
             bindings = <&to COMFY_L>;
+            layers = <0 1 2 3 4>
         };
 
         combo_default {
@@ -116,6 +118,19 @@
             timeout-ms = <40>;
             key-positions = <20 21>;
             bindings = <&to NAV_L>;
+        };
+
+        combo_numb {
+            timeout-ms = <40>;
+            key-positions = <11 21>;
+            bindings = <&to NUMBERS_L>;
+        };
+
+        combo_zero {
+            timeout-ms = <40>;
+            key-positions = <21 22>;
+            bindings = <&kp N0>;
+            layers = <5>;
         };
     };
 
@@ -171,7 +186,7 @@
 */
 
         numsym_layer {
-            label = "NumSym";
+            label = "Symbols";
             bindings = <
 &mt F1 N1  &mt F2 N2  &mt F3 N3       &mt F4 N4      &mt F5 N5           &kp N6    &kp N7       &kp N8    &kp N9   &kp N0
   &kp TAB  &kp UNDER  &kp MINUS       &kp EQUAL  &kp LS(EQUAL)    &mt RBKT LBKT    &kp AT  &mt DQT SQT   &kp DQT  &kp DEL
@@ -233,10 +248,30 @@
         comfy_layer {
             label = "COMFY";
             bindings = <
- &kp TILDE  &kp LC(LEFT)         &kp UP  &kp LC(RIGHT)         &kp CARET    &kp KP_MULTIPLY   &kp N7  &kp N8  &kp N9  &kp KP_DIVIDE
-   &kp DEL      &kp LEFT       &kp DOWN      &kp RIGHT     &kp LESS_THAN        &kp KP_PLUS   &kp N4  &kp N5  &kp N6  &kp BACKSPACE
-&kp LSHIFT       &kp DEL  &kp BACKSPACE          &none  &kp GREATER_THAN       &kp KP_MINUS   &kp N1  &kp N2  &kp N3          &to 0
-                                             &kp LCTRL         &kp SPACE             &kp N0  &kp DOT
+ &kp TILDE  &kp LC(LEFT) &kp UP         &kp LC(RIGHT) &kp CARET            &kp KP_MULTIPLY  &kp N7  &kp N8  &kp N9  &kp KP_DIVIDE
+ &kp DEL    &kp LEFT     &kp DOWN       &kp RIGHT     &kp LESS_THAN        &kp KP_PLUS      &kp N4  &kp N5  &kp N6  &kp BACKSPACE
+ &kp LSHIFT &kp DEL      &kp BACKSPACE  &none         &kp GREATER_THAN     &kp KP_MINUS     &kp N1  &kp N2  &kp N3          &to 0
+                                        &kp LCTRL     &kp SPACE            &kp N0           &kp DOT
+            >;
+        };
+
+        // -----------------------------------------------------------------------------
+        /* 5 = Numbers
+	.----------------------------------------------------------------------.
+	|  /  |  7  |  8  |  9  |  *  |     	 |  *  |  7  |  8  |  9  |  /  |
+	|BKSPC|  4  |  5  |  6  |  +  |     	 |  +  |  4  |  5  |  6  |BKSPC|
+	|  .  |  1  |  2  |  3  |  -  |          |  -  |  1  |  2  |  3  |  .  |
+	'-----------------\ SHFT| SPC |          | SPC |SHFT /-----------------'
+	                   '--------------------------------'
+*/
+
+        numbers_layer {
+            label = "NUMBERS";
+            bindings = <
+ &kp KP_DIVIDE  &kp N7   &kp N8   &kp N9      &kp KP_MULTIPLY      &kp KP_MULTIPLY  &kp N7  &kp N8  &kp N9  &kp KP_DIVIDE
+ &kp BACKSPACE  &kp N4   &kp N5   &kp N6      &kp KP_PLUS          &kp KP_PLUS      &kp N4  &kp N5  &kp N6  &kp BACKSPACE
+ &kp DOT        &kp N1   &kp N2   &kp N3      &kp KP_MINUS         &kp KP_MINUS     &kp N1  &kp N2  &kp N3  &to DOT
+                                  &kp LSHIFT  &kp SPACE            &kp SPACE        &kp LSHIFT
             >;
         };
     };
