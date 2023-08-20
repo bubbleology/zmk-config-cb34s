@@ -207,10 +207,10 @@
         default_layer {
             label = "Base";
             bindings = <
-&mt DEL Q  &kp W  &kp E      &kp R      &kp T         &kp Y     &kp U      &kp I    &kp O          &kp P
-    &kp A  &kp S  &kp D      &kp F      &kp G         &kp H     &kp J      &kp K    &kp L  &kp BACKSPACE
-    &kp Z  &kp X  &kp C      &kp V      &kp B         &kp N     &kp M  &kp COMMA  &kp DOT          &mo 1
-                         &kp LCTRL  &kp SPACE    &kp RSHIFT  &kp RALT
+&mt DEL Q  &kp W  &kp E      &kp R      &kp T           &kp Y        &kp U      &kp I     &kp O    &kp P
+    &kp A  &kp S  &kp D      &kp F      &kp G           &kp H        &kp J      &kp K     &kp L    &kp BACKSPACE
+    &kp Z  &kp X  &kp C      &kp V      &kp B           &kp N        &kp M      &kp COMMA &kp DOT  &mo 1
+                             &kp LCTRL  &kp SPACE       &kp RSHIFT   &kp RALT
             >;
         };
 
@@ -277,10 +277,10 @@
         // -----------------------------------------------------------------------------
         /* 4 = Comfort
 	.----------------------------------------------------------------------.
-	| TIL | ← ← |  ↑  | → → |  ^  |     	 |  *  |  7  |  8  |  9  |  /  |
-	| DEL |  ←  |  ↓  |  →  |  <  |     	 |  +  |  4  |  5  |  6  |BKSPC|
-	| SFT | DEL |BKSPC|     |  >  |          |  -  |  1  |  2  |  3  |TO_0 |
-	'-----------------\ CTRL| SPC |          |  0  |  .  /-----------------'
+	| TIL | ← ← |  ↑  | → → |  ^  |     	 |PGUP | ← ← |  ↑  | → → | DEL |
+	| DEL |  ←  |  ↓  |  →  |  <  |     	 |PGDN |  ←  |  ↓  |  →  |BKSPC|
+	| SFT | DEL |BKSPC|     |  >  |          |HOME |  `  |  ~  |     |TO_0 |
+	'-----------------\ CTRL| SPC |          |SHFT |CTRL /-----------------'
 	                   '--------------------------------'
 */
 
@@ -290,7 +290,7 @@
  &kp TILDE  &kp LC(LEFT) &kp UP         &kp LC(RIGHT) &kp CARET            &kp PG_UP   &kp LC(LEFT) &kp UP     &kp LC(RIGHT)  &kp DEL
  &kp DEL    &kp LEFT     &kp DOWN       &kp RIGHT     &kp LESS_THAN        &kp PG_DN   &kp LEFT     &kp DOWN   &kp RIGHT  	  &mt LC(BACKSPACE) BACKSPACE
  &kp LSHIFT &kp DEL      &kp BACKSPACE  &none         &kp GREATER_THAN     &kp HOME    &kp GRAVE    &kp TILDE  &none		  &to 0
-                                        &kp LCTRL     &kp SPACE            &kp N0           &kp DOT
+                                        &kp LCTRL     &kp SPACE            &kp LSHIFT  &kp LCTRL
             >;
         };
 
