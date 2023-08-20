@@ -42,12 +42,14 @@
 	TAB 	= 11 | 12		LC(C)	= 17 | 18
 							LC(V)	= 27 | 28
 	ENTER 	= 12 | 13		SK(SFT) = 16 | 17       SK(LALT) = 6 | 7
-	LPAR 	= 13 | 14		RPAR 	= 15 | 16
+	LPAR 	= 13 | 14		RPAR 	= 15 | 16       REPEAT 	= 18 | 19
+
 	TO_2	= 20 | 21       TO_2	= 27 | 28
 	TO_4	= 21 | 22
 	TO_0	= 22 | 23       TO_0	= 26 | 27 
 	TO_3	= 20 | 21 | 22	TO_3	= 27 | 28 | 29
-    TO_5    = 3  | 13
+    TO_5    = 3  | 13       TO_5    = 6  | 16
+
 */
 
 / {
@@ -162,6 +164,12 @@
             key-positions = <16 27>;
             bindings = <&kp DOT>;
             layers = <5>;
+        };
+
+        combo_repeat {
+            timeout-ms = <40>;
+            key-positions = <18 19>;
+            bindings = <&kp DOT>;
         };
     };
 
