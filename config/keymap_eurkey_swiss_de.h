@@ -3,8 +3,8 @@
 **/
 
 // Base
-#define CH_Z    CH_Y    // Y
-#define CH_Y    CH_Z    // Z
+#define CH_Z    Y    // Y
+#define CH_Y    Z    // Z
 // AltGr Symbols
 #define CH_UDIA ALGR(U) // ü
 #define CH_ODIA ALGR(O) // ö
