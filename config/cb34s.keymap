@@ -169,7 +169,7 @@
         combo_repeat {
             timeout-ms = <40>;
             key-positions = <18 19>;
-            bindings = <&kp DOT>;
+            bindings = <&key_repeat>;
         };
     };
 
