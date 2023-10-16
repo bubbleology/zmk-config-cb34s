@@ -247,19 +247,6 @@
             key-positions = <28 29>;
             bindings = <&kp N>;
         };
-
-        combo_comfy_left_MAC {
-            timeout-ms = <40>;
-            key-positions = <21 22>;
-            bindings = <&to 7>;
-            layers = <6 7>;
-        };
-
-        combo_comfy_right_MAC {
-            timeout-ms = <40>;
-            key-positions = <27 28>;
-            bindings = <&to 7>;
-            layers = <6 7>;
         };
 
         combo_default_left_MAC {
@@ -286,7 +273,7 @@
         combo_win_base_layer {
             timeout-ms = <40>;
             key-positions = <0 10 20>;
-            bindings = <&to 6>;
+            bindings = <&to 0>;
             layers = <6 7>;
         };
     };
