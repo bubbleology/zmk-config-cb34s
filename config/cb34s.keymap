@@ -265,28 +265,28 @@
         combo_default_left_MAC {
             timeout-ms = <40>;
             key-positions = <22 23>;
-            bindings = <&to MAC_L>;
+            bindings = <&to 6>;
             layers = <6 7>;
         };
 
         combo_default_right_MAC {
             timeout-ms = <40>;
             key-positions = <26 27>;
-            bindings = <&to MAC_L>;
+            bindings = <&to 6>;
             layers = <6 7>;
         };
 
         combo_mac_base_layer {
             timeout-ms = <40>;
             key-positions = <0 10 20>;
-            bindings = <&to MAC_L>;
+            bindings = <&to 6>;
             layers = <0 1 2 3 4 5>;
         };
 
         combo_win_base_layer {
             timeout-ms = <40>;
             key-positions = <0 10 20>;
-            bindings = <&to DEFAULT_L>;
+            bindings = <&to 6>;
             layers = <6 7>;
         };
     };
