@@ -15,6 +15,8 @@
 #define BLE_L 		3
 #define COMFY_L		4
 #define NUMBERS_L	5
+#define MAC_L	6
+#define COMMA_L	7
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 
@@ -267,14 +269,14 @@
         combo_comfy_left_MAC {
             timeout-ms = <40>;
             key-positions = <21 22>;
-            bindings = <&to 7>;
+            bindings = <&to 2>;
             layers = <6 7>;
         };
 
         combo_comfy_right_MAC {
             timeout-ms = <40>;
             key-positions = <27 28>;
-            bindings = <&to 7>;
+            bindings = <&to 2>;
             layers = <6 7>;
         };
 
@@ -457,7 +459,7 @@
             bindings = <
 &mt DEL Q  &kp W  &kp E      &kp R      &kp T           &kp Y        &kp U      &kp I     &kp O    &kp P
     &kp A  &kp S  &kp D      &kp F      &kp G           &kp H        &kp J      &kp K     &kp L    &kp BACKSPACE
-    &kp Z  &kp X  &kp C      &kp V      &kp B           &kp N        &kp M      &kp COMMA &kp DOT  &mo 1
+    &kp Z  &kp X  &kp C      &kp V      &kp B           &kp N        &kp M      &kp COMMA &kp DOT  &mo NUMSYM
                              &kp LGUI   &kp SPACE       &kp RSHIFT   &kp RALT
             >;
         };
