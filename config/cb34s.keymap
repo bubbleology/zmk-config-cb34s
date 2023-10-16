@@ -10,12 +10,12 @@
 #include "keymap_eurkey_swiss_de.h"
 
 #define DEFAULT_L 	0
-#define NUMSYM_L 	1
-#define NAV_L 		2
-#define BLE_L 		3
-#define COMFY_L		4
-#define NUMBERS_L	5
-#define MAC_L	6
+#define MAC_L	    1
+#define NUMSYM_L 	2
+#define NAV_L 		3
+#define BLE_L 		4
+#define COMFY_L		5
+#define NUMBERS_L	6
 #define COMMA_L	7
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
@@ -255,14 +255,14 @@
         combo_default_left_MAC {
             timeout-ms = <40>;
             key-positions = <22 23>;
-            bindings = <&to 6>;
+            bindings = <&to 1>;
             layers = <6 7>;
         };
 
         combo_default_right_MAC {
             timeout-ms = <40>;
             key-positions = <26 27>;
-            bindings = <&to 6>;
+            bindings = <&to 1>;
             layers = <6 7>;
         };
 
@@ -283,7 +283,7 @@
         combo_mac_base_layer {
             timeout-ms = <40>;
             key-positions = <0 10 20>;
-            bindings = <&to 6>;
+            bindings = <&to 1>;
             layers = <0 1 2 3 4 5>;
         };
 
@@ -320,7 +320,7 @@
         .----------------------------------------------------------------------.
         |Q DEL|  W  |  E  |  R  |  T  |          |  Y  |  U  |  I  |  O  |  P  |
         |  A  |  S  |  D  |  F  |  G  |          |  H  |  J  |  K  |  L  |BKSPC|
-        |  Z  |  X  |  C  |  V  |  B  |          |  N  |  M  |  ,  |  .  |MO_1 |
+        |  Z  |  X  |  C  |  V  |  B  |          |  N  |  M  |  ,  |  .  |MO_2 |
         '-----------------\ CTRL| SPC |          | SFT | RALT/-----------------'
                         '--------------------------------'
     */
@@ -333,19 +333,40 @@
             bindings = <
 &mt DEL Q  &kp W  &kp E      &kp R      &kp T           &kp Y        &kp U      &kp I     &kp O    &kp P
     &kp A  &kp S  &kp D      &kp F      &kp G           &kp H        &kp J      &kp K     &kp L    &kp BACKSPACE
-    &kp Z  &kp X  &kp C      &kp V      &kp B           &kp N        &kp M      &kp COMMA &kp DOT  &mo 1
+    &kp Z  &kp X  &kp C      &kp V      &kp B           &kp N        &kp M      &kp COMMA &kp DOT  &mo 2
                              &kp LCTRL  &kp SPACE       &kp RSHIFT   &kp RALT
+            >;
+        };
+    
+    // ===========================================================================================================
+    // -----------------------------------------------------------------------------
+    /* 1 = Default MAC
+        .----------------------------------------------------------------------.
+        |Q DEL|  W  |  E  |  R  |  T  |          |  Y  |  U  |  I  |  O  |  P  |
+        |  A  |  S  |  D  |  F  |  G  |          |  H  |  J  |  K  |  L  |BKSPC|
+        |  Z  |  X  |  C  |  V  |  B  |          |  N  |  M  |  ,  |  .  |MO_2 |
+        '-----------------\ LGUI| SPC |          | SFT | RALT/-----------------'
+                        '--------------------------------'
+        */
+
+        mac_layer {
+            label = "MAC";
+            bindings = <
+&mt DEL Q  &kp W  &kp E      &kp R      &kp T           &kp Y        &kp U      &kp I     &kp O    &kp P
+    &kp A  &kp S  &kp D      &kp F      &kp G           &kp H        &kp J      &kp K     &kp L    &kp BACKSPACE
+    &kp Z  &kp X  &kp C      &kp V      &kp B           &kp N        &kp M      &kp COMMA &kp DOT  &mo 2
+                             &kp LGUI   &kp SPACE       &kp RSHIFT   &kp RALT
             >;
         };
 
         // ===========================================================================================================
         // -----------------------------------------------------------------------------
-        /* 1 = Numbers and Symbols
+        /* 2 = Numbers and Symbols
         .----------------------------------------------------------------------.
         | 1 F1|2 F2 |3 F3 |4 F4 |5 F5 |          |  6  |  7  |  8  |  9  |  0  |
         | TAB |  _  |  -  |  =  |  +  |          | [ ] |  @  | ' " |  "  | DEL |
         | LGUI|  !  |  ?  | ; : |  :  |          | { } |  /  |  |  |  \  |     |
-        '-----------------\ LALT| SFT |          |TO_2 |     /-----------------'
+        '-----------------\ LALT| SFT |          |TO_3 |     /-----------------'
                         '--------------------------------'
         */
 
@@ -355,13 +376,13 @@
     &mt F1 N1  &mt F2 N2  &mt F3 N3  &mt F4 N4      &mt F5 N5           &kp N6          &kp N7      &kp N8      &kp N9   &kp N0
     &kp TAB    &kp UNDER  &kp MINUS  &kp EQUAL      &kp LS(EQUAL)       &mt RBKT LBKT   &kp AT      &mt DQT SQT &kp DQT  &kp DEL
     &kp LGUI   &kp EXCL   &kp QMARK  &mt COLON SEMI &kp COLON           &mt RBRC LBRC   &kp FSLH    &kp PIPE    &kp BSLH &none
-                                     &kp LALT       &sk LEFT_GUI        &to 2    &kp RALT
+                                     &kp LALT       &sk LEFT_GUI        &to 3    &kp RALT
             >;
         };
 
         // ===========================================================================================================
         // -----------------------------------------------------------------------------
-        /* 2 = Navigation
+        /* 3 = Navigation
         .----------------------------------------------------------------------.
         | ESC |  O  |  E  |  R  |  P  |          |PGUP | ← ← |  ↑  | → → | DEL |
         | DEL |  S  |  D  |  F  |  L  |          |PGDN |  ←  |  ↓  |  →  |BKSPC|
@@ -382,7 +403,7 @@
 
         // ===========================================================================================================
         // -----------------------------------------------------------------------------
-        /* 3 = Bluetooth
+        /* 4 = Bluetooth
         .----------------------------------------------------------------------.
         | BT0 | BT1 | BT2 | BTP | BTN |     	 | BTN | BTP | BT2 | BT1 | BT0 |
         |     |     |     |     | BLC |     	 | BLC |     |     |     |     |
@@ -403,7 +424,7 @@
 
         // ===========================================================================================================
         // -----------------------------------------------------------------------------
-        /* 4 = Comfort
+        /* 5 = Comfort
         .----------------------------------------------------------------------.
         | TIL | ← ← |  ↑  | → → |  ^  |     	 |PGUP | ← ← |  ↑  | → → | DEL |
         | DEL |  ←  |  ↓  |  →  |  <  |     	 |PGDN |  ←  |  ↓  |  →  |BKSPC|
@@ -424,7 +445,7 @@
 
         // ===========================================================================================================
         // -----------------------------------------------------------------------------
-        /* 5 = Numbers
+        /* 6 = Numbers
         .----------------------------------------------------------------------.
         |  /  |  7  |  8  |  9  |  *  |     	 |  *  |  7  |  8  |  9  |  /  |
         |BKSPC|  4  |  5  |  6  |  +  |     	 |  +  |  4  |  5  |  6  |BKSPC|
@@ -445,32 +466,11 @@
 
         // ===========================================================================================================
         // -----------------------------------------------------------------------------
-        /* 6 = Default MAC
-        .----------------------------------------------------------------------.
-        |Q DEL|  W  |  E  |  R  |  T  |          |  Y  |  U  |  I  |  O  |  P  |
-        |  A  |  S  |  D  |  F  |  G  |          |  H  |  J  |  K  |  L  |BKSPC|
-        |  Z  |  X  |  C  |  V  |  B  |          |  N  |  M  |  ,  |  .  |MO_1 |
-        '-----------------\ LGUI| SPC |          | SFT | RALT/-----------------'
-                        '--------------------------------'
-        */
-
-        mac_layer {
-            label = "MAC";
-            bindings = <
-&mt DEL Q  &kp W  &kp E      &kp R      &kp T           &kp Y        &kp U      &kp I     &kp O    &kp P
-    &kp A  &kp S  &kp D      &kp F      &kp G           &kp H        &kp J      &kp K     &kp L    &kp BACKSPACE
-    &kp Z  &kp X  &kp C      &kp V      &kp B           &kp N        &kp M      &kp COMMA &kp DOT  &mo 1
-                             &kp LGUI   &kp SPACE       &kp RSHIFT   &kp RALT
-            >;
-        };
-
-        // ===========================================================================================================
-        // -----------------------------------------------------------------------------
         /* 7 = Comfort MAC
         .----------------------------------------------------------------------.
         | TIL | ← ← |  ↑  | → → |  ^  |     	 |PGUP | ← ← |  ↑  | → → | DEL |
         | DEL |  ←  |  ↓  |  →  |  <  |     	 |PGDN |  ←  |  ↓  |  →  |BKSPC|
-        | SFT | DEL |BKSPC|     |  >  |          |HOME |  `  |  ~  |     |TO_6 |
+        | SFT | DEL |BKSPC|     |  >  |          |HOME |  `  |  ~  |     |TO_1 |
         '-----------------\ LGUI| SPC |          |SHFT |LGUI /-----------------'
                         '--------------------------------'
         */
@@ -480,7 +480,7 @@
             bindings = <
  &kp TILDE  &kp LC(LEFT) &kp UP         &kp LC(RIGHT) &kp CARET            &kp PG_UP   &kp LC(LEFT) &kp UP     &kp LC(RIGHT)  &kp DEL
  &kp DEL    &kp LEFT     &kp DOWN       &kp RIGHT     &kp LESS_THAN        &kp PG_DN   &kp LEFT     &kp DOWN   &kp RIGHT  	  &mt LC(BACKSPACE) BACKSPACE
- &kp LSHIFT &kp DEL      &kp BACKSPACE  &none         &kp GREATER_THAN     &kp HOME    &kp GRAVE    &kp TILDE  &none		  &to 6
+ &kp LSHIFT &kp DEL      &kp BACKSPACE  &none         &kp GREATER_THAN     &kp HOME    &kp GRAVE    &kp TILDE  &none		  &to 1
                                         &kp LGUI      &kp SPACE            &kp LSHIFT  &kp LGUI
             >;
         };
