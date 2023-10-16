@@ -251,35 +251,35 @@
         combo_comfy_left_MAC {
             timeout-ms = <40>;
             key-positions = <21 22>;
-            bindings = <&to COMFMAC_L>;
+            bindings = <&to 7>;
             layers = <6 7>;
         };
 
         combo_comfy_right_MAC {
             timeout-ms = <40>;
             key-positions = <27 28>;
-            bindings = <&to COMFMAC_L>;
+            bindings = <&to 7>;
             layers = <6 7>;
         };
 
         combo_default_left_MAC {
             timeout-ms = <40>;
             key-positions = <22 23>;
-            bindings = <&to MAC_L>;
+            bindings = <&to 6>;
             layers = <6 7>;
         };
 
         combo_default_right_MAC {
             timeout-ms = <40>;
             key-positions = <26 27>;
-            bindings = <&to MAC_L>;
+            bindings = <&to 6>;
             layers = <6 7>;
         };
 
         combo_mac_base_layer {
             timeout-ms = <40>;
             key-positions = <23 24 25 26>;
-            bindings = <&to MAC_L>;
+            bindings = <&to 6>;
             layers = <1 2 3 4 5>;
         };
 
@@ -465,7 +465,7 @@
         .----------------------------------------------------------------------.
         | TIL | ← ← |  ↑  | → → |  ^  |     	 |PGUP | ← ← |  ↑  | → → | DEL |
         | DEL |  ←  |  ↓  |  →  |  <  |     	 |PGDN |  ←  |  ↓  |  →  |BKSPC|
-        | SFT | DEL |BKSPC|     |  >  |          |HOME |  `  |  ~  |     |TO_0 |
+        | SFT | DEL |BKSPC|     |  >  |          |HOME |  `  |  ~  |     |TO_6 |
         '-----------------\ LGUI| SPC |          |SHFT |LGUI /-----------------'
                         '--------------------------------'
         */
@@ -475,7 +475,7 @@
             bindings = <
  &kp TILDE  &kp LC(LEFT) &kp UP         &kp LC(RIGHT) &kp CARET            &kp PG_UP   &kp LC(LEFT) &kp UP     &kp LC(RIGHT)  &kp DEL
  &kp DEL    &kp LEFT     &kp DOWN       &kp RIGHT     &kp LESS_THAN        &kp PG_DN   &kp LEFT     &kp DOWN   &kp RIGHT  	  &mt LC(BACKSPACE) BACKSPACE
- &kp LSHIFT &kp DEL      &kp BACKSPACE  &none         &kp GREATER_THAN     &kp HOME    &kp GRAVE    &kp TILDE  &none		  &to 0
+ &kp LSHIFT &kp DEL      &kp BACKSPACE  &none         &kp GREATER_THAN     &kp HOME    &kp GRAVE    &kp TILDE  &none		  &to 6
                                         &kp LGUI      &kp SPACE            &kp LSHIFT  &kp LGUI
             >;
         };
