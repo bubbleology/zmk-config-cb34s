@@ -96,28 +96,28 @@
             timeout-ms = <40>;
             key-positions = <21 22>;
             bindings = <&to COMFY_L>;
-            layers = <0 1 2 3 4 5>
+            layers = <0 1 2 3 4 5>;
         };
 
         combo_comfy_right {
             timeout-ms = <40>;
             key-positions = <27 28>;
             bindings = <&to COMFY_L>;
-            layers = <0 1 2 3 4 5>
+            layers = <0 1 2 3 4 5>;
         };
 
         combo_default_left {
             timeout-ms = <40>;
             key-positions = <22 23>;
             bindings = <&to DEFAULT_L>;
-            layers = <0 1 2 3 4 5>
+            layers = <0 1 2 3 4 5>;
         };
 
         combo_default_right {
             timeout-ms = <40>;
             key-positions = <26 27>;
             bindings = <&to DEFAULT_L>;
-            layers = <0 1 2 3 4 5>
+            layers = <0 1 2 3 4 5>;
         };
 
         combo_sk_shift {
@@ -252,42 +252,42 @@
             timeout-ms = <40>;
             key-positions = <21 22>;
             bindings = <&to COMFMAC_L>;
-            layers = <6 7>
+            layers = <6 7>;
         };
 
         combo_comfy_right_MAC {
             timeout-ms = <40>;
             key-positions = <27 28>;
             bindings = <&to COMFMAC_L>;
-            layers = <6 7>
+            layers = <6 7>;
         };
 
         combo_default_left_MAC {
             timeout-ms = <40>;
             key-positions = <22 23>;
             bindings = <&to MAC_L>;
-            layers = <6 7>
+            layers = <6 7>;
         };
 
         combo_default_right_MAC {
             timeout-ms = <40>;
             key-positions = <26 27>;
             bindings = <&to MAC_L>;
-            layers = <6 7>
+            layers = <6 7>;
         };
 
         combo_mac_base_layer {
             timeout-ms = <40>;
             key-positions = <23 24 25 26>;
             bindings = <&to MAC_L>;
-            layers = <1 2 3 4 5>
+            layers = <1 2 3 4 5>;
         };
 
         combo_win_base_layer {
             timeout-ms = <40>;
             key-positions = <23 24 25 26>;
             bindings = <&to DEFAULT_L>;
-            layers = <6 7>
+            layers = <6 7>;
         };
     };
 
