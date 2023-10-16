@@ -292,7 +292,6 @@
             layers = <6 7>;
         };
 
-        }; 
     };
 
     // BEHAVIOR    
