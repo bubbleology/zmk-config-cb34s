@@ -280,7 +280,7 @@
             timeout-ms = <40>;
             key-positions = <23 24 25 26>;
             bindings = <&to 6>;
-            layers = <1 2 3 4 5>;
+            layers = <0 1 2 3 4 5>;
         };
 
         combo_win_base_layer {
