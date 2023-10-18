@@ -322,7 +322,7 @@
         |  A  |  S  |  D  |  F  |  G  |          |  H  |  J  |  K  |  L  |BKSPC|
         |  Z  |  X  |  C  |  V  |  B  |          |  N  |  M  |  ,  |  .  |MO_2 |
         '-----------------\ CTRL| SPC |          | SFT | RALT/-----------------'
-                        '--------------------------------'
+                           '--------------------------------'
     */
 
     keymap {
@@ -346,7 +346,7 @@
         |  A  |  S  |  D  |  F  |  G  |          |  H  |  J  |  K  |  L  |BKSPC|
         |  Z  |  X  |  C  |  V  |  B  |          |  N  |  M  |  ,  |  .  |MO_2 |
         '-----------------\ LGUI| SPC |          | SFT | RALT/-----------------'
-                        '--------------------------------'
+                           '--------------------------------'
         */
 
         mac_layer {
@@ -367,7 +367,7 @@
         | TAB |  _  |  -  |  =  |  +  |          | [ ] |  @  | ' " |  "  | DEL |
         | LGUI|  !  |  ?  | ; : |  :  |          | { } |  /  |  |  |  \  |     |
         '-----------------\ LALT| SFT |          |TO_3 |     /-----------------'
-                        '--------------------------------'
+                           '--------------------------------'
         */
 
         numsym_layer {
@@ -388,7 +388,7 @@
         | DEL |  S  |  D  |  F  |  L  |          |PGDN |  ←  |  ↓  |  →  |BKSPC|
         | SFT |  X  |  C  |  V  |TO_0 |          |HOME |  `  |  ~  |     |TO_0 |
         '-----------------\ CTRL| SPC |          |SHFT |CTRL /-----------------'
-                        '--------------------------------'
+                           '--------------------------------'
         */
 
         nav_layer {
@@ -409,7 +409,7 @@
         |     |     |     |     | BLC |     	 | BLC |     |     |     |     |
         |TO_0 |     |     |     | BLO |          | BLO |     |     |	 |TO_0 |
         '-----------------\     |TO_0 |          |TO_0 |     /-----------------'
-                        '--------------------------------'
+                           '--------------------------------'
         */
 
         ble_layer {
@@ -430,7 +430,7 @@
         | DEL |  ←  |  ↓  |  →  |  <  |     	 |PGDN |  ←  |  ↓  |  →  |BKSPC|
         | SFT | DEL |BKSPC|     |  >  |          |HOME |  `  |  ~  |     |TO_0 |
         '-----------------\ CTRL| SPC |          |SHFT |CTRL /-----------------'
-                        '--------------------------------'
+                           '--------------------------------'
         */
 
         comfy_layer {
@@ -451,7 +451,7 @@
         |BKSPC|  4  |  5  |  6  |  +  |     	 |  +  |  4  |  5  |  6  |BKSPC|
         |  0  |  1  |  2  |  3  |  -  |          |  -  |  1  |  2  |  3  |  0  |
         '-----------------\ SHFT| SPC |          | SPC |SHFT /-----------------'
-                        '--------------------------------'
+                           '--------------------------------'
         */
 
         numbers_layer {
@@ -471,17 +471,17 @@
         | TIL | ← ← |  ↑  | → → |  ^  |     	 |PGUP | ← ← |  ↑  | → → | DEL |
         | DEL |  ←  |  ↓  |  →  |  <  |     	 |PGDN |  ←  |  ↓  |  →  |BKSPC|
         | SFT | DEL |BKSPC|     |  >  |          |HOME |  `  |  ~  |     |TO_1 |
-        '-----------------\LCTRL| SPC |          |SHFT |LCTRL/-----------------'
-                        '--------------------------------'
+        '-----------------\LALT | SPC |          |SHFT |LGUI/-----------------'
+                           '--------------------------------'
         */
 
         macnav_layer {
-            label = "Nav M";
+            label = "M-Nav";
             bindings = <
  &kp TILDE  &kp LC(LEFT) &kp UP         &kp LC(RIGHT) &kp CARET            &kp PG_UP   &kp LC(LEFT) &kp UP     &kp LC(RIGHT)  &kp DEL
  &kp DEL    &kp LEFT     &kp DOWN       &kp RIGHT     &kp LESS_THAN        &kp PG_DN   &kp LEFT     &kp DOWN   &kp RIGHT  	  &mt LC(BACKSPACE) BACKSPACE
  &kp LSHIFT &kp DEL      &kp BACKSPACE  &none         &kp GREATER_THAN     &kp HOME    &kp GRAVE    &kp TILDE  &none		  &to 1
-                                        &kp LCTRL     &kp SPACE           &kp LSHIFT  &kp LCTRL
+                                        &kp LALT      &kp SPACE            &kp LSHIFT  &kp LGUI
             >;
         };
     };
