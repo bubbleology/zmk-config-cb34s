@@ -353,7 +353,7 @@
             label = "MAC";
             bindings = <
 &mt DEL Q  &kp W  &kp E      &kp R      &kp T           &kp Y        &kp U      &kp I     &kp O    &kp P
-    &kp A  &kp S  &kp D      &kp F      &kp G           &kp H        &kp J      &kp K     &kp L    &&mt LA(BACKSPACE) BACKSPACE
+    &kp A  &kp S  &kp D      &kp F      &kp G           &kp H        &kp J      &kp K     &kp L    &&mt LALT(BACKSPACE) BACKSPACE
     &kp Z  &kp X  &kp C      &kp V      &kp B           &kp N        &kp M      &kp COMMA &kp DOT  &mo 2
                              &kp LGUI   &kp SPACE       &kp RSHIFT   &kp RALT
             >;
@@ -479,7 +479,7 @@
             label = "M-Nav";
             bindings = <
  &kp TILDE  &kp LC(LEFT) &kp UP         &kp LC(RIGHT) &kp CARET            &kp PG_UP   &kp LC(LEFT) &kp UP     &kp LC(RIGHT)  &kp DEL
- &kp DEL    &kp LEFT     &kp DOWN       &kp RIGHT     &kp LESS_THAN        &kp PG_DN   &kp LEFT     &kp DOWN   &kp RIGHT  	  &mt LA(BACKSPACE) BACKSPACE
+ &kp DEL    &kp LEFT     &kp DOWN       &kp RIGHT     &kp LESS_THAN        &kp PG_DN   &kp LEFT     &kp DOWN   &kp RIGHT  	  &mt LALT(BACKSPACE) BACKSPACE
  &kp LSHIFT &kp DEL      &kp BACKSPACE  &none         &kp GREATER_THAN     &kp HOME    &kp GRAVE    &kp TILDE  &none		  &to 1
                                         &kp LALT      &kp SPACE            &kp LSHIFT  &kp LGUI
             >;
