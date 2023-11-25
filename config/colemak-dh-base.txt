@@ -25,8 +25,8 @@
     /* 2 = FCK Layout
         .----------------------------------------------------------------------.
         |Q DEL|  F  |  C  |  K  |  X  |          |  J  |  W  |  O  |  U  |  Z  |
-        |  R  |  S  |  T  |  H  |  D  |          |  M  |  N  |  A  |  I  |BKSPC|
-        |  Y  |  B  |  G  |  L  |  P  |          |  ,  |  E  |  V  |  .  |MO_3 |
+        |  R  |  S  |  T  |  H  |  D  |          |  M  |  E  |  A  |  I  |  N  |
+        |  Y  |  L  |  G  |  B  |  P  |          |  ,  |BKSPC|  V  |  .  |MO_3 |
         '-----------------\ CTRL| SPC |          | SFT | RALT/-----------------'
                            '--------------------------------'
         */
@@ -35,8 +35,8 @@
             label = "FCKL";
             bindings = <
 &mt DEL Q  &kp F  &kp C      &kp K      &kp X           &kp J        &kp W      &kp O     &kp U    &kp Z
-    &kp R  &kp S  &kp T      &kp H      &kp D           &kp M        &kp N      &kp A     &kp I    &kp BACKSPACE
-    &kp Y  &kp B  &kp G      &kp L      &kp P           &kp COMMA    &kp E      &kp V     &kp DOT  &mo 2
+    &kp R  &kp S  &kp T      &kp H      &kp D           &kp M        &kp E      &kp A     &kp I    &kp N
+    &kp Y  &kp L  &kp G      &kp B      &kp P           &kp COMMA    &kp BACKSPACE &kp V  &kp DOT  &mo 2
                              &kp LCTRL  &kp SPACE       &kp RSHIFT   &kp RALT
             >;
         };
@@ -51,10 +51,5 @@ y  b  g  p  l  e  m  ,  .  -
 // FCK Layout (Bubble)
     
 q  f  c  k  x  j  w  o  u  z
-r  s  t  h  d  m  n  a  i  /
-y  b  g  l  p  ,  e  v  .  -
-
-// KOY
-k  .  o  ,  y  v  g  c  l  z
-h  a  e  i  u  d  t  r  n  /
-x  q  ä  ü  b  p  e  v  .  -
+r  s  t  h  d  m  e  a  i  n
+y  l  g  b  p  ,  /  v  .  -
