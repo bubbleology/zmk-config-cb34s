@@ -296,7 +296,7 @@
             bindings = <
     &mt F1 N1  &mt F2 N2  &mt F3 N3  &mt F4 N4      &mt F5 N5           &kp N6          &kp N7      &kp N8      &kp N9   &kp N0
     &kp TAB    &kp UNDER  &kp MINUS  &kp EQUAL      &kp LS(EQUAL)       &mt RBKT LBKT   &kp AT      &mt DQT SQT &kp DQT  &kp DEL
-    &kp LGUI   &kp EXCL   &kp QMARK  &mt COLON SEMI &kp COLON           &mt RBRC LBRC   &mt LA(LBKT) FSLH   &kp PIPE    &mt LA(RBKT) BSLH &none
+    &kp LGUI   &kp EXCL   &kp QMARK  &mt COLON SEMI &kp COLON           &mt RBRC LBRC   &mt RA(LBKT) FSLH   &kp PIPE    &mt RA(RBKT) BSLH &none
                                      &kp LALT       &sk LEFT_GUI        &to 3    &kp RALT
             >;
         };
