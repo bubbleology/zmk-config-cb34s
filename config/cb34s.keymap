@@ -290,21 +290,21 @@
 
     // ===========================================================================================================
     // -----------------------------------------------------------------------------
-    /* 2 = FCK Layout
+    /* 2 = FOU Layout
         .----------------------------------------------------------------------.
-        |Q DEL|  F  |  C  |  K  |  X  |          |  J  |  W  |  O  |  U  |  Z  |
+        |Q DEL|  W  |  C  |  V  |  X  |          |  J  |  F  |  O  |  U  |  Z  |
         |  R  |  S  |  T  |  H  |  D  |          |  M  |  E  |  A  |  I  |  N  |
-        |  Y  |  L  |  G  |  B  |  P  |          |  ,  |BKSPC|  V  |  .  |MO_3 |
+        |  Y  |  L  |  G  |  B  |  P  |          |  ,  |BKSPC|  K  |  .  |MO_3 |
         '-----------------\ CTRL| SPC |          | SFT | RALT/-----------------'
                            '--------------------------------'
         */
 
         fck_layer {
-            label = "FCKL";
+            label = "FOUL";
             bindings = <
-&mt DEL Q  &kp F  &kp C      &kp K      &kp X           &kp J        &kp W      &kp O     &kp U    &kp Z
+&mt DEL Q  &kp W  &kp C      &kp V      &kp X           &kp J        &kp F      &kp O     &kp U    &kp Z
     &kp R  &kp S  &kp T      &kp H      &kp D           &kp M        &kp E      &kp A     &kp I    &kp N
-    &kp Y  &kp L  &kp G      &kp B      &kp P           &kp COMMA    &kp BACKSPACE &kp V  &kp DOT  &mo 2
+    &kp Y  &kp L  &kp G      &kp B      &kp P           &kp COMMA    &kp BACKSPACE &kp K  &kp DOT  &mo 3
                              &kp LCTRL  &kp SPACE       &kp RSHIFT   &kp RALT
             >;
         };

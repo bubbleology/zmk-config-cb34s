@@ -14,7 +14,7 @@
             bindings = <
 &mt DEL Q  &kp W  &kp F      &kp P      &kp B           &kp J        &kp L      &kp U     &kp Y    &kp BACKSPACE
     &kp A  &kp R  &kp S      &kp T      &kp G           &kp M        &kp N      &kp E     &kp I    &kp O
-    &kp Z  &kp X  &kp C      &kp D      &kp V           &kp K        &kp H      &kp COMMA &kp DOT  &mo 2
+    &kp Z  &kp X  &kp C      &kp D      &kp V           &kp K        &kp H      &kp COMMA &kp DOT  &mo 3
                              &kp LCTRL  &kp SPACE       &kp RSHIFT   &kp RALT
             >;
         };
@@ -36,7 +36,28 @@
             bindings = <
 &mt DEL Q  &kp F  &kp C      &kp K      &kp X           &kp J        &kp W      &kp O     &kp U    &kp Z
     &kp R  &kp S  &kp T      &kp H      &kp D           &kp M        &kp E      &kp A     &kp I    &kp N
-    &kp Y  &kp L  &kp G      &kp B      &kp P           &kp COMMA    &kp BACKSPACE &kp V  &kp DOT  &mo 2
+    &kp Y  &kp L  &kp G      &kp B      &kp P           &kp COMMA    &kp BACKSPACE &kp V  &kp DOT  &mo 3
+                             &kp LCTRL  &kp SPACE       &kp RSHIFT   &kp RALT
+            >;
+        };
+
+    // ===========================================================================================================
+    // -----------------------------------------------------------------------------
+    /* 2 = FOU Layout
+        .----------------------------------------------------------------------.
+        |Q DEL|  W  |  C  |  V  |  X  |          |  J  |  F  |  O  |  U  |  Z  |
+        |  R  |  S  |  T  |  H  |  D  |          |  M  |  E  |  A  |  I  |  N  |
+        |  Y  |  L  |  G  |  B  |  P  |          |  ,  |BKSPC|  K  |  .  |MO_3 |
+        '-----------------\ CTRL| SPC |          | SFT | RALT/-----------------'
+                           '--------------------------------'
+        */
+
+        fck_layer {
+            label = "FOUL";
+            bindings = <
+&mt DEL Q  &kp W  &kp C      &kp V      &kp X           &kp J        &kp F      &kp O     &kp U    &kp Z
+    &kp R  &kp S  &kp T      &kp H      &kp D           &kp M        &kp E      &kp A     &kp I    &kp N
+    &kp Y  &kp L  &kp G      &kp B      &kp P           &kp COMMA    &kp BACKSPACE &kp K  &kp DOT  &mo 3
                              &kp LCTRL  &kp SPACE       &kp RSHIFT   &kp RALT
             >;
         };
@@ -53,3 +74,10 @@ y  b  g  p  l  e  m  ,  .  -
 q  f  c  k  x  j  w  o  u  z
 r  s  t  h  d  m  e  a  i  n
 y  l  g  b  p  ,  /  v  .  -
+
+// FOU Layout (Bubble)
+    
+q  w  c  v  x  j  f  o  u  z
+r  s  t  h  d  m  e  a  i  n
+y  l  g  b  p  ,  /  k  .  -
+
