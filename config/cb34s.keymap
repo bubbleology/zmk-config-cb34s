@@ -141,13 +141,13 @@
 
         combo_numb_left {
             timeout-ms = <40>;
-            key-positions = <3 13>;
+            key-positions = <10 14>;
             bindings = <&to NUMBERS_L>;
         };
 
         combo_numb_right {
             timeout-ms = <40>;
-            key-positions = <6 16>;
+            key-positions = <15 19>;
             bindings = <&to NUMBERS_L>;
         };
 
