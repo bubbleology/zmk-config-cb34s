@@ -286,7 +286,7 @@
         .----------------------------------------------------------------------.
         | 1 F1|2 F2 |3 F3 |4 F4 |5 F5 |          |  6  |  7  |  8  |  9  |  0  |
         | TAB |  _  |  -  |  =  |  +  |          | [ ] |  @  | ' " |  "  | DEL |
-        | LGUI|  !  |  ?  | ; : |  :  |          | { } |  /  |  |  |  \  |     |
+        | LGUI|  !  |  ?  | ; : |  :  |          | { } | / « |  |  | \ » |     |
         '-----------------\ LALT| SFT |          |TO_3 |     /-----------------'
                            '--------------------------------'
         */
@@ -296,7 +296,7 @@
             bindings = <
     &mt F1 N1  &mt F2 N2  &mt F3 N3  &mt F4 N4      &mt F5 N5           &kp N6          &kp N7      &kp N8      &kp N9   &kp N0
     &kp TAB    &kp UNDER  &kp MINUS  &kp EQUAL      &kp LS(EQUAL)       &mt RBKT LBKT   &kp AT      &mt DQT SQT &kp DQT  &kp DEL
-    &kp LGUI   &kp EXCL   &kp QMARK  &mt COLON SEMI &kp COLON           &mt RBRC LBRC   &kp FSLH    &kp PIPE    &kp BSLH &none
+    &kp LGUI   &kp EXCL   &kp QMARK  &mt COLON SEMI &kp COLON           &mt RBRC LBRC   &mt LA(LBKT) FSLH   &kp PIPE    &mt LA(RBKT) BSLH &none
                                      &kp LALT       &sk LEFT_GUI        &to 3    &kp RALT
             >;
         };
