@@ -51,13 +51,6 @@
 	TO_3	= 20 | 21 | 22	TO_3	= 27 | 28 | 29
     TO_5    = 3  | 13       TO_5    = 6  | 16
 
-    T       = 10 | 13               T       = 16 | 19
-    G       = 1  | 2                G       = 7  | 8
-    B       = 20 | 23               B       = 26 | 29
-    Y       = 20 | 21 | 22 | 23     Y       = 26 | 27 | 28 | 29
-    H       = 21 | 23               H       = 26 | 28
-    N       = 20 | 21               N       = 28 | 29
-
 */
 
 / {
@@ -176,78 +169,6 @@
             timeout-ms = <40>;
             key-positions = <18 19>;
             bindings = <&key_repeat>;
-        };
-
-        combo_left_t {
-            timeout-ms = <40>;
-            key-positions = <10 13>;
-            bindings = <&kp T>;
-        };
-
-        combo_right_t {
-            timeout-ms = <40>;
-            key-positions = <16 19>;
-            bindings = <&kp T>;
-        };
-
-        combo_left_g {
-            timeout-ms = <40>;
-            key-positions = <1 2>;
-            bindings = <&kp G>;
-        };
-
-        combo_right_g {
-            timeout-ms = <40>;
-            key-positions = <7 8>;
-            bindings = <&kp G>;
-        };
-
-        combo_left_b {
-            timeout-ms = <40>;
-            key-positions = <20 23>;
-            bindings = <&kp B>;
-        };
-
-        combo_right_b {
-            timeout-ms = <40>;
-            key-positions = <26 29>;
-            bindings = <&kp B>;
-        };
-
-        combo_left_y {
-            timeout-ms = <40>;
-            key-positions = <20 21 22 23>;
-            bindings = <&kp Y>;
-        };
-
-        combo_right_y {
-            timeout-ms = <40>;
-            key-positions = <26 27 28 29>;
-            bindings = <&kp Y>;
-        };
-
-        combo_left_h {
-            timeout-ms = <40>;
-            key-positions = <21 23>;
-            bindings = <&kp H>;
-        };
-
-        combo_right_h {
-            timeout-ms = <40>;
-            key-positions = <26 28>;
-            bindings = <&kp H>;
-        };
-
-        combo_left_n {
-            timeout-ms = <40>;
-            key-positions = <20 21>;
-            bindings = <&kp N>;
-        };
-
-        combo_right_n {
-            timeout-ms = <40>;
-            key-positions = <28 29>;
-            bindings = <&kp N>;
         };
 
         // MAC COMBOS
@@ -447,20 +368,20 @@
         // -----------------------------------------------------------------------------
         /* 6 = Numbers
         .----------------------------------------------------------------------.
-        |  /  |  7  |  8  |  9  |  *  |     	 |  *  |  7  |  8  |  9  |  /  |
-        |BKSPC|  4  |  5  |  6  |  +  |     	 |  +  |  4  |  5  |  6  |BKSPC|
-        |  0  |  1  |  2  |  3  |  -  |          |  -  |  1  |  2  |  3  |  0  |
-        '-----------------\ SHFT| SPC |          | SPC |SHFT /-----------------'
+        |  /  |  7  |  8  |  9  |  *  |     	 |  #  | ← ← |  ↑  | → → | DEL |
+        |  \  |  4  |  5  |  6  |  +  |     	 |  &  |  ←  |  ↓  |  →  |BKSPC|
+        |  0  |  1  |  2  |  3  |  -  |          |  |  |  `  |  ,  |  .  |  0  |
+        '-----------------\ LGUI| SPC |          |SHFT |LCTRL/-----------------'
                            '--------------------------------'
         */
 
         numbers_layer {
             label = "Numbers";
             bindings = <
- &kp KP_DIVIDE  &kp N7   &kp N8   &kp N9      &kp KP_MULTIPLY      &kp KP_MULTIPLY  &kp N7  &kp N8  &kp N9  &kp KP_DIVIDE
- &kp BACKSPACE  &kp N4   &kp N5   &kp N6      &kp KP_PLUS          &kp KP_PLUS      &kp N4  &kp N5  &kp N6  &kp BACKSPACE
- &kp N0         &kp N1   &kp N2   &kp N3      &kp KP_MINUS         &kp KP_MINUS     &kp N1  &kp N2  &kp N3  &kp N0
-                                  &kp LSHIFT  &kp SPACE            &kp SPACE        &kp LSHIFT
+ &kp KP_DIVIDE  &kp N7   &kp N8   &kp N9      &kp KP_MULTIPLY      &kp NON_US_HASH   &kp LC(LEFT)  &kp UP    &kp LC(RIGHT) &kp DEL
+ &kp BACKSLASH  &kp N4   &kp N5   &kp N6      &kp KP_PLUS          &kp LS(N7)        &kp LEFT      &kp DWOWN &kp RIGHT     &kp BACKSPACE
+ &kp N0         &kp N1   &kp N2   &kp N3      &kp KP_MINUS         &kp LS(BACKSLASH) &kp GRAVE     &kp COMMA &kp DOT       &to 1
+                                  &kp LGUI    &kp SPACE            &kp LSHIFT        &kp LCTRL
             >;
         };
 
@@ -476,10 +397,10 @@
         */
 
         macnav_layer {
-            label = "M-Nav";
+            label = "CMAC";
             bindings = <
  &kp TILDE  &kp LC(LEFT) &kp UP         &kp LC(RIGHT) &kp CARET            &kp PG_UP   &kp LC(LEFT) &kp UP     &kp LC(RIGHT)  &kp DEL
- &kp DEL    &kp LEFT     &kp DOWN       &kp RIGHT     &kp LESS_THAN        &kp PG_DN   &kp LEFT     &kp DOWN   &kp RIGHT  	  &mt LA(BACKSPACE) BACKSPACE
+ &kp DEL    &kp LEFT     &kp DOWN       &kp RIGHT     &kp LESS_THAN        &kp PG_DN   &kp LEFT     &kp DOWN   &kp RIGHT  	  &kp BACKSPACE
  &kp LSHIFT &kp DEL      &kp BACKSPACE  &none         &kp GREATER_THAN     &kp HOME    &kp GRAVE    &kp TILDE  &none		  &to 1
                                         &kp LALT      &kp SPACE            &kp LSHIFT  &kp RCTRL
             >;
