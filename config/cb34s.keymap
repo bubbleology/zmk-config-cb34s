@@ -11,7 +11,7 @@
 
 #define DEFAULT_L 	0
 #define MAC_L	    1
-#define COLM_L      2
+#define FCK_L       2
 #define NUMSYM_L 	3
 #define NAV_L 		4
 #define BLE_L 		5
@@ -290,21 +290,21 @@
 
     // ===========================================================================================================
     // -----------------------------------------------------------------------------
-    /* 2 = Colemak DH
+    /* 2 = FCK Layout
         .----------------------------------------------------------------------.
-        |Q DEL|  W  |  F  |  P  |  B  |          |  J  |  L  |  U  |  Y  |BKSPC|
-        |  A  |  R  |  S  |  T  |  G  |          |  M  |  N  |  E  |  I  |  O  |
-        |  Z  |  X  |  C  |  D  |  V  |          |  K  |  H  |  ,  |  .  |MO_3 |
+        |Q DEL|  F  |  C  |  K  |  X  |          |  J  |  W  |  O  |  U  |  Z  |
+        |  R  |  S  |  T  |  H  |  D  |          |  V  |  N  |  A  |  I  |BKSPC|
+        |  Y  |  B  |  G  |  P  |  L  |          |  E  |  M  |  ,  |  .  |MO_2 |
         '-----------------\ CTRL| SPC |          | SFT | RALT/-----------------'
                            '--------------------------------'
         */
 
-        colemakdh_layer {
-            label = "COLM";
+        fck_layer {
+            label = "FCKL";
             bindings = <
-&mt DEL Q  &kp W  &kp F      &kp P      &kp B           &kp J        &kp L      &kp U     &kp Y    &kp BACKSPACE
-    &kp A  &kp R  &kp S      &kp T      &kp G           &kp M        &kp N      &kp E     &kp I    &kp O
-    &kp Z  &kp X  &kp C      &kp D      &kp V           &kp K        &kp H      &kp COMMA &kp DOT  &mo 3
+&mt DEL Q  &kp F  &kp C      &kp K      &kp X           &kp J        &kp W      &kp O     &kp U    &kp Z
+    &kp R  &kp S  &kp T      &kp H      &kp D           &kp V        &kp N      &kp A     &kp I    &kp BACKSPACE
+    &kp Y  &kp B  &kp G      &kp P      &kp L           &kp E        &kp M      &kp COMMA &kp DOT  &mo 2
                              &kp LCTRL  &kp SPACE       &kp RSHIFT   &kp RALT
             >;
         };
