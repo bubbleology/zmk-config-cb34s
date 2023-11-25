@@ -292,8 +292,8 @@
     // -----------------------------------------------------------------------------
     /* 2 = FCK Layout
         .----------------------------------------------------------------------.
-        |Q DEL|  F  |  C  |  K  |  X  |          |  J  |  W  |  O  |  U  |  Z  |
-        |  R  |  S  |  T  |  H  |  D  |          |  M  |  N  |  A  |  I  |BKSPC|
+        |Q DEL|  F  |  C  |  D  |  X  |          |  J  |  W  |  O  |  U  |  Z  |
+        |  R  |  S  |  T  |  H  |  K  |          |  M  |  N  |  A  |  I  |BKSPC|
         |  Y  |  B  |  G  |  L  |  P  |          |  ,  |  E  |  V  |  .  |MO_2 |
         '-----------------\ CTRL| SPC |          | SFT | RALT/-----------------'
                            '--------------------------------'
@@ -302,8 +302,8 @@
         fck_layer {
             label = "FCKL";
             bindings = <
-&mt DEL Q  &kp F  &kp C      &kp K      &kp X           &kp J        &kp W      &kp O     &kp U    &kp Z
-    &kp R  &kp S  &kp T      &kp H      &kp D           &kp M        &kp N      &kp A     &kp I    &kp BACKSPACE
+&mt DEL Q  &kp F  &kp C      &kp D      &kp X           &kp J        &kp W      &kp O     &kp U    &kp Z
+    &kp R  &kp S  &kp T      &kp H      &kp K           &kp M        &kp N      &kp A     &kp I    &kp BACKSPACE
     &kp Y  &kp B  &kp G      &kp L      &kp P           &kp COMMA    &kp E      &kp V     &kp DOT  &mo 2
                              &kp LCTRL  &kp SPACE       &kp RSHIFT   &kp RALT
             >;
