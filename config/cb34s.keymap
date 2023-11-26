@@ -293,18 +293,18 @@
     /* 2 = FOU Layout
         .----------------------------------------------------------------------.
         |Q DEL|  W  |  C  |  V  |  X  |          |  J  |  F  |  O  |  U  |  Z  |
-        |  R  |  S  |  T  |  H  |  B  |          |  M  |  E  |  A  |  I  |  N  |
+        |  A  |  S  |  T  |  H  |  B  |          |  K  |  N  |  E  |  I  |  R  |
         |  Y  |  L  |  G  |  D  |  P  |          |  ,  |BKSPC|  K  |  .  |MO_3 |
         '-----------------\ CTRL| SPC |          | SFT | RALT/-----------------'
                            '--------------------------------'
         */
 
-        fou_layer {
+        fck_layer {
             label = "FOUL";
             bindings = <
 &mt DEL Q  &kp W  &kp C      &kp V      &kp X           &kp J        &kp F      &kp O     &kp U    &kp Z
-    &kp R  &kp S  &kp T      &kp H      &kp B           &kp M        &kp E      &kp A     &kp I    &kp N
-    &kp Y  &kp L  &kp G      &kp D      &kp P           &kp COMMA    &kp BACKSPACE &kp K  &kp DOT  &mo 3
+    &kp A  &kp S  &kp T      &kp H      &kp B           &kp K        &kp N      &kp E     &kp I    &kp R
+    &kp Y  &kp L  &kp G      &kp D      &kp P           &kp COMMA    &kp M      &kp BACKSPACE  &kp DOT  &mo 3
                              &kp LCTRL  &kp SPACE       &kp RSHIFT   &kp RALT
             >;
         };
