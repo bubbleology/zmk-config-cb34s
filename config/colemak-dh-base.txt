@@ -46,8 +46,8 @@
     /* 2 = FOU Layout
         .----------------------------------------------------------------------.
         |Q DEL|  W  |  C  |  V  |  X  |          |  J  |  F  |  O  |  U  |  Z  |
-        |  R  |  S  |  T  |  H  |  D  |          |  M  |  E  |  A  |  I  |  N  |
-        |  Y  |  L  |  G  |  B  |  P  |          |  ,  |BKSPC|  K  |  .  |MO_3 |
+        |  R  |  S  |  T  |  H  |  B  |          |  M  |  E  |  A  |  I  |  N  |
+        |  Y  |  L  |  G  |  D  |  P  |          |  ,  |BKSPC|  K  |  .  |MO_3 |
         '-----------------\ CTRL| SPC |          | SFT | RALT/-----------------'
                            '--------------------------------'
         */
@@ -56,28 +56,42 @@
             label = "FOUL";
             bindings = <
 &mt DEL Q  &kp W  &kp C      &kp V      &kp X           &kp J        &kp F      &kp O     &kp U    &kp Z
-    &kp R  &kp S  &kp T      &kp H      &kp D           &kp M        &kp E      &kp A     &kp I    &kp N
-    &kp Y  &kp L  &kp G      &kp B      &kp P           &kp COMMA    &kp BACKSPACE &kp K  &kp DOT  &mo 3
+    &kp R  &kp S  &kp T      &kp H      &kp B           &kp M        &kp E      &kp A     &kp I    &kp N
+    &kp Y  &kp L  &kp G      &kp D      &kp P           &kp COMMA    &kp BACKSPACE &kp K  &kp DOT  &mo 3
                              &kp LCTRL  &kp SPACE       &kp RSHIFT   &kp RALT
             >;
         };
 
 
+```
 // FCK Layout (Dustyn)
 
 q  f  c  k  x  j  w  o  u  z
 r  s  t  h  d  v  n  a  i  /
 y  b  g  p  l  e  m  ,  .  -
+```
 
+
+```
 // FCK Layout (Bubble)
     
 q  f  c  k  x  j  w  o  u  z
 r  s  t  h  d  m  e  a  i  n
 y  l  g  b  p  ,  /  v  .  -
+```
 
-// FOU Layout (Bubble)
-    
+
+```
+// FOU Layout 1
+  
 q  w  c  v  x  j  f  o  u  z
 r  s  t  h  d  m  e  a  i  n
 y  l  g  b  p  ,  /  k  .  -
+```
 
+```
+// FOU Layout 2
+q  w  c  v  x  j  f  o  u  z
+r  s  t  h  b  k  e  a  i  n
+y  l  g  d  p  ,  /  m  .  -
+```
