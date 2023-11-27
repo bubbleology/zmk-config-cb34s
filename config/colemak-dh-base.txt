@@ -104,8 +104,36 @@ y  l  g  d  p  ,  /  m  .  -
 ```
 
 ```
-// FOU Layout Apple Mix
+// KNEIR v1 
 q  w  c  v  x  j  f  o  u  z
 a  s  t  h  b  k  n  e  i  r
 y  l  g  d  p  ,  m  /  .  -
 ```
+
+```
+// AEIN
+q  w  c  v  x  j  f  o  u  z
+r  s  t  h  b  k  a  e  i  n
+y  l  g  d  p  ,  m  /  .  -
+```
+
+    // ===========================================================================================================
+    // -----------------------------------------------------------------------------
+    /* 2 = FOU Layout
+        .----------------------------------------------------------------------.
+        |Q DEL|  W  |  C  |  V  |  X  |          |  J  |  F  |  O  |  U  |  Z  |
+        |  R  |  S  |  T  |  H  |  B  |          |  K  |  A  |  E  |  I  |  N  |
+        |  Y  |  L  |  G  |  D  |  P  |          |  ,  |BKSPC|  K  |  .  |MO_3 |
+        '-----------------\ CTRL| SPC |          | SFT | RALT/-----------------'
+                           '--------------------------------'
+        */
+
+        fou_layer {
+            label = "FOUL";
+            bindings = <
+&mt DEL Q  &kp W  &kp C      &kp V      &kp X           &kp J        &kp F      &kp O     &kp U    &kp Z
+    &kp R  &kp S  &kp T      &kp H      &kp B           &kp K        &kp A      &kp E     &kp I    &kp N
+    &kp Y  &kp L  &kp G      &kp D      &kp P           &kp COMMA    &kp M      &kp BACKSPACE  &kp DOT  &mo 3
+                             &kp LCTRL  &kp SPACE       &kp RSHIFT   &kp RALT
+            >;
+        };
