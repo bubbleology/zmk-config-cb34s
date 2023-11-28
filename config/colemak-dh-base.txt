@@ -130,7 +130,7 @@ y  g  l  d  p  ,  m  /  .  -
     /* 2 = FOU Layout
         .----------------------------------------------------------------------.
         |Q DEL|  W  |  C  |  V  |  X  |          |  J  |  F  |  O  |  U  |  Z  |
-        |  R  |  S  |  T  |  H  |  B  |          |  K  |  A  |  E  |  I  |  N  |
+        |  A  |  S  |  T  |  H  |  B  |          |  K  |  A  |  E  |  I  |  R  |
         |  Y  |  G  |  L  |  D  |  P  |          |  ,  |BKSPC|  K  |  .  |MO_3 |
         '-----------------\ CTRL| SPC |          | SFT | RALT/-----------------'
                            '--------------------------------'
@@ -140,8 +140,24 @@ y  g  l  d  p  ,  m  /  .  -
             label = "FOUL";
             bindings = <
 &mt DEL Q  &kp W  &kp C      &kp V      &kp X           &kp J        &kp F      &kp O     &kp U    &kp Z
-    &kp R  &kp S  &kp T      &kp H      &kp B           &kp K        &kp A      &kp E     &kp I    &kp N
+    &kp A  &kp S  &kp T      &kp H      &kp B           &kp K        &kp N      &kp E     &kp I    &kp R
     &kp Y  &kp G  &kp L      &kp D      &kp P           &kp COMMA    &kp M      &kp BACKSPACE  &kp DOT  &mo 3
                              &kp LCTRL  &kp SPACE       &kp RSHIFT   &kp RALT
             >;
         };
+
+```
+ bindings
+    = <&macro_press &kp LSHFT>
+    , <&macro_tap &kp S>
+    , <&macro_release &kp LSHFT>
+    , <&macro_tap &kp C>
+    , <&macro_tap &kp H>
+    ;
+```
+
+```
+ bindings
+    = <&macro_tap &kp LS(S) &kp C &kp H>
+    ;
+```
