@@ -280,7 +280,7 @@
         .----------------------------------------------------------------------.
         |Q DEL|  W  |  C  |  V  |  X  |          |  J  |  F  |  O  |  U  |  Z  |
         |  A  |  S  |  T  |  H  |  B  |          |  K  |  A  |  E  |  I  |  R  |
-        |  Y  |  G  |  L  |  D  |  P  |          |  ,  |BKSPC|  K  |  .  |MO_3 |
+        |  Y  |  G  |  L  |  D  |  P  |          |  .  |BKSPC|  K  |  ,  |MO_3 |
         '-----------------\ CTRL| SPC |          | SFT | RALT/-----------------'
                            '--------------------------------'
         */
@@ -290,7 +290,7 @@
             bindings = <
 &mt DEL Q  &kp W  &kp C      &kp V      &kp X           &kp J        &kp F      &kp O     &kp U    &kp Z
     &kp A  &kp S  &kp T      &kp H      &kp B           &kp K        &kp N      &kp E     &kp I    &kp R
-    &kp Y  &kp G  &kp L      &kp D      &kp P           &kp COMMA    &kp M      &kp BACKSPACE  &kp DOT  &mo 3
+    &kp Y  &kp G  &kp L      &kp D      &kp P           &kp DOT      &kp M      &kp BACKSPACE  &kp COMMA  &mo 3
                              &kp LCTRL  &kp SPACE       &kp RSHIFT   &kp RALT
             >;
         };
