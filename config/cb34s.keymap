@@ -11,7 +11,7 @@
 
 #define DEFAULT_L 	0
 #define MAC_L	    1
-#define KNEIR_L       2
+#define KNEIR_L     2
 #define NUMSYM_L 	3
 #define NAV_L 		4
 #define BLE_L 		5
@@ -148,7 +148,7 @@
 
         combo_numb_right {
             timeout-ms = <40>;
-            key-positions = <15 19>;
+            key-positions = <16 19>;
             bindings = <&to NUMBERS_L>;
         };
 
@@ -204,7 +204,7 @@
 
         combo_colmak_layer {
             timeout-ms = <40>;
-            key-positions = <20 24>;
+            key-positions = <20 23>;
             bindings = <&to 2>;
             layers = <0 1 2 3 4 5 6 7 8>;
         };
