@@ -195,11 +195,34 @@
             layers = <0 1 2 3 4 5 6 7 8>;
         };
 
+        // First Steps towards 23332 
+
         combo_dot {
             timeout-ms = <40>;
             key-positions = <26 27>;
             bindings = <&kp DOT>;
             layers = <2 6 7 8>;
+        };
+
+        combo_letter_z {
+            timeout-ms = <40>;
+            key-positions = <7 9>;
+            bindings = <&kp Z>;
+            layers = <2>;
+        };
+
+        combo_letter_q {
+            timeout-ms = <40>;
+            key-positions = <1 2>;
+            bindings = <&kp Q>;
+            layers = <2>;
+        };
+
+        combo_letter_b {
+            timeout-ms = <40>;
+            key-positions = <2 3>;
+            bindings = <&kp P>;
+            layers = <2>;
         };
 
     };
