@@ -109,13 +109,6 @@
             layers = <0 2 3 4 5 6>;
         };
 
-        combo_default_right {
-            timeout-ms = <40>;
-            key-positions = <26 27>;
-            bindings = <&to DEFAULT_L>;
-            layers = <0 2 3 4 5 6>;
-        };
-
         combo_sk_shift {
             timeout-ms = <40>;
             key-positions = <16 17>;
