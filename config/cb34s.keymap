@@ -106,7 +106,7 @@
             timeout-ms = <40>;
             key-positions = <22 23>;
             bindings = <&to DEFAULT_L>;
-            layers = <0 2 3 4 5 6>;
+            layers = <4 5 6 7>;
         };
 
         combo_sk_shift {
@@ -206,7 +206,7 @@
 
         combo_letter_z {
             timeout-ms = <40>;
-            key-positions = <7 9>;
+            key-positions = <7 8>;
             bindings = <&kp Z>;
             layers = <2>;
         };
@@ -225,10 +225,10 @@
             layers = <2>;
         };
 
-        combo_letter_q {
+        combo_letter_p {
             timeout-ms = <40>;
-            key-positions = <20 21>;
-            bindings = <&kp Q>;
+            key-positions = <22 23>;
+            bindings = <&kp P>;
             layers = <2>;
         };
 
