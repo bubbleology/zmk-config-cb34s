@@ -218,17 +218,17 @@
             layers = <2>;
         };
 
-        combo_letter_b {
+        combo_letter_p {
             timeout-ms = <40>;
             key-positions = <2 3>;
-            bindings = <&kp B>;
+            bindings = <&kp P>;
             layers = <2>;
         };
 
-        combo_letter_p {
+        combo_letter_b {
             timeout-ms = <40>;
             key-positions = <22 23>;
-            bindings = <&kp P>;
+            bindings = <&kp B>;
             layers = <2>;
         };
 
