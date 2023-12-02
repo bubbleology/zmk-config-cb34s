@@ -221,7 +221,7 @@
         combo_letter_b {
             timeout-ms = <40>;
             key-positions = <2 3>;
-            bindings = <&kp P>;
+            bindings = <&kp B>;
             layers = <2>;
         };
 
