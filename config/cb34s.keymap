@@ -225,6 +225,13 @@
             layers = <2>;
         };
 
+        combo_letter_q {
+            timeout-ms = <40>;
+            key-positions = <20 21>;
+            bindings = <&kp Q>;
+            layers = <2>;
+        };
+
     };
     
     // BEHAVIOR    
