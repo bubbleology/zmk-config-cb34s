@@ -264,7 +264,7 @@
 
         combo_sch {
             timeout-ms = <40>;
-            key-positions = <11 12>;
+            key-positions = <11 2>;
             bindings = <&macro_sch>;
             layers = <2>;
         };
