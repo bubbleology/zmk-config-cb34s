@@ -280,9 +280,9 @@
     // -----------------------------------------------------------------------------
     /* 1 = Default MAC
         .----------------------------------------------------------------------.
-        |Q DEL|  W  |  E  |  R  |  T  |          |  Y  |  U  |  I  |  O  |  P  |
-        |  A  |  S  |  D  |  F  |  G  |          |  H  |  J  |  K  |  L  |BKSPC|
-        |  Z  |  X  |  C  |  V  |  B  |          |  N  |  M  |  ,  |  .  |MO_3 |
+        |Q DEL|  W  |  C  |  V  |  X  |          |  J  |  F  |  U  |  O  |  Z  |
+        |  A  |  S  |  T  |  H  |  B  |          |  K  |  N  |  E  |  I  |  R  |
+        |  Y  |  G  |  L  |  D  |  P  |          |  .  |BKSPC|  K  |  ,  |MO_3 |
         '-----------------\ LGUI| SPC |          | SFT | RALT/-----------------'
                            '--------------------------------'
         */
@@ -290,9 +290,9 @@
         mac_layer {
             label = "MAC";
             bindings = <
-&mt DEL Q  &kp W  &kp E      &kp R      &kp T           &kp Y        &kp U      &kp I     &kp O    &kp P
-    &kp A  &kp S  &kp D      &kp F      &kp G           &kp H        &kp J      &kp K     &kp L    &kp BACKSPACE
-    &kp Z  &kp X  &kp C      &kp V      &kp B           &kp N        &kp M      &kp COMMA &kp DOT  &mo 3
+&mt DEL Q  &kp W  &kp C      &kp V      &kp X           &kp J        &kp F      &kp U     &kp O    &kp Z
+    &kp A  &kp S  &kp T      &kp H      &kp B           &kp K        &kp N      &kp E     &kp I    &kp R
+    &kp Y  &kp G  &kp L      &kp D      &kp P           &kp DOT      &kp M      &kp BACKSPACE  &kp COMMA  &mo 3
                              &kp LGUI   &kp SPACE       &kp RSHIFT   &kp RALT
             >;
         };
@@ -409,7 +409,7 @@
         .----------------------------------------------------------------------.
         |  /  |  7  |  8  |  9  |  *  |     	 |  #  | ← ← |  ↑  | → → | DEL |
         |  \  |  4  |  5  |  6  |  +  |     	 |  &  |  ←  |  ↓  |  →  |BKSPC|
-        |  0  |  1  |  2  |  3  |  -  |          |  |  |  `  |  ,  |  .  |TO_1 |
+        |  0  |  1  |  2  |  3  |  -  |          |  |  |  $  |  %  |  ,  |TO_1 |
         '-----------------\ LGUI| SPC |          |SHFT |LCTRL/-----------------'
                            '--------------------------------'
         */
@@ -419,7 +419,7 @@
             bindings = <
  &kp KP_DIVIDE  &kp N7   &kp N8   &kp N9      &kp KP_MULTIPLY      &kp NON_US_HASH   &kp LC(LEFT)  &kp UP    &kp LC(RIGHT) &kp DEL
  &kp BACKSLASH  &kp N4   &kp N5   &kp N6      &kp KP_PLUS          &kp LS(N7)        &kp LEFT      &kp DOWN  &kp RIGHT     &kp BACKSPACE
- &kp N0         &kp N1   &kp N2   &kp N3      &kp KP_MINUS         &kp LS(BACKSLASH) &kp GRAVE     &kp COMMA &kp DOT       &to 1
+ &kp N0         &kp N1   &kp N2   &kp N3      &kp KP_MINUS         &kp DOLLAR        &kp GRAVE     &kp PERCENT &kp COMMA   &to 1
                                   &kp LGUI    &kp SPACE            &kp LSHIFT        &kp LCTRL
             >;
         };
