@@ -55,6 +55,18 @@
             >;
             tap-ms = <20>;
             };
+        
+        macro_ch: macro_ch {
+            label = "Macro_ch";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &macro_tap &kp C
+                &macro_release &kp RSHIFT
+                &macro_tap &kp H
+            >;
+            tap-ms = <20>;
+            };
 
         macro_zu: macro_zu {
             label = "Macro_zu";
@@ -270,8 +282,15 @@
 
         combo_sch {
             timeout-ms = <40>;
-            key-positions = <11 2>;
+            key-positions = <2 11>;
             bindings = <&macro_sch>;
+            layers = <2>;
+        };
+
+        combo_ch {
+            timeout-ms = <40>;
+            key-positions = <2 13>;
+            bindings = <&macro_ch>;
             layers = <2>;
         };
 
