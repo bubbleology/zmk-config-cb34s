@@ -357,8 +357,8 @@
                            '--------------------------------'
         */
 
-        KNEIR_layer {
-            label = "KNEIR";
+        MAC_layer {
+            label = "MAC";
             bindings = <
 &mt DEL Q  &kp W  &kp C      &kp V      &kp X           &kp J        &kp F      &kp U     &kp O    &kp Z
     &kp A  &kp S  &kp T      &kp R      &kp B           &kp K        &kp N      &kp E     &kp I    &kp H
